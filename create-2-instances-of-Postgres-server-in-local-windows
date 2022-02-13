@@ -1,0 +1,6 @@
+Steps to create and run 2 insatnces of Postgres in local windows : [Assuming first insatnce is already running on 5432 port]
+  1. Navigate to Postgres install folder > bin
+  2. From CMD terminal run initdb with a new location for the second DB : `initdb -D "c:\ProgramData\pgdata2"` [This will create DB user with your windows username and password and you would need to use it to access the second DB from any client]
+  3. Edit c:\ProgramData\pgdata2\postgresql.conf and change the value for port . Ex. 5433
+  4. From CMD terminal as Administrator run - `pg_ctl register -N my-second-postgres -D "c:\ProgramData\pgdata2"`
+  5. From CMD terminal run - `net start my-second-postgres`
