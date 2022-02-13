@@ -4,3 +4,4 @@ Steps to create and run 2 insatnces of Postgres in local windows : [Assuming fir
   3. Edit c:\ProgramData\pgdata2\postgresql.conf and change the value for port . Ex. 5433
   4. From CMD terminal as Administrator run - `pg_ctl register -N my-second-postgres -D "c:\ProgramData\pgdata2"`
   5. From CMD terminal run - `net start my-second-postgres`
+
