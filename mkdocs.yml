@@ -1,0 +1,8 @@
+site_name: "deep-cheatshett-techdocs"
+site_description: "deep-cheatshett-techdocs"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
