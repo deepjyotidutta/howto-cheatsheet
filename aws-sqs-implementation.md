@@ -14,6 +14,6 @@ devx-queue-integration-do-not-delete
 9. Create CloudFront Distribution using API GW URL
 10. Enable all query params to be passed from Cloudfront to API GW
 
-Authorizer:
+## Authorizer:
 1. Create Lambda Authorizer for Basic Auth for all requests
 2. Add the the Authorizer to the API Gateway Resource's Method Execution section Auth field
