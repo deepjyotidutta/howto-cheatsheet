@@ -5,3 +5,6 @@ Steps to create and run 2 insatnces of Postgres in local windows : [Assuming fir
   4. From CMD terminal as Administrator run - `pg_ctl register -N my-second-postgres -D "c:\ProgramData\pgdata2"`
   5. From CMD terminal run - `net start my-second-postgres`
 
+POSTGRES - ALTER table and add an existing sequence to an existing column . restart seq to avoif any PKey conflict
+ALTER TABLE reviewersettings ALTER COLUMN id SET DEFAULT nextval('reviewersettings_id_seq');
+ALTER SEQUENCE reviewersettings_id_seq RESTART WITH 1000;
